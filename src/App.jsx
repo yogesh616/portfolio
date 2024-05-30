@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import ys from './Images/ys.jpg';
-
+import ast from './Images/3d.jpg'
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
@@ -61,11 +61,15 @@ function App() {
         </div>
       </nav>
 
-      <div ref={homeRef} className="container-fluid m-auto wide">
+
+      <div className='gear text-center '><i className="fa-solid fa-gear st"></i>
+      </div>
+
+      <div ref={homeRef} className="container-fluid m-auto wide media">
         <div className="d-flex justify-content-between align-items-center px-5  same">
           <div className="d-flex flex-column text">
-            <h1 className="fs-1 my-4">Here I am, Yogesh Saini</h1>
-            <p className="fs-3 text-secondary-emphasis">A passionate Front-end React Developer based in</p>
+            <h1 className="fs-1 my-4 header">Here I am, Yogesh Saini</h1>
+            <p className="fs-3 text-secondary-emphasis ">A passionate Front-end React Developer based in</p>
             <p className="fs-3">Deeg, Rajasthan, India</p>
             <div className="buttons d-flex gap-3 pe-auto mt-3 text-center">
               {icons.length > 0 ? (
@@ -81,18 +85,21 @@ function App() {
               )}
             </div>
           </div>
+          <div className='splash'>
           <div className="img ">
             {/* <img src='https://zoyothemes.com/queue/layout/images/home/home.png'/> */}
           </div>
+          </div>
         </div>
       </div>
+
 
       {/* About */}
       <div ref={aboutRef} className="wide ">
         <div className=" d-flex justify-content-center align-items-center gap-5">
           <img
             className="about-img same"
-            src="https://a0.anyrgb.com/pngimg/376/772/%D1%82%D1%80%D0%B5%D0%B1%D1%83%D0%B5%D1%82%D1%81%D1%8F-programmer-computer-cartoon-programmer-computer-sublime-text-json-programming-language-perl-computer-science-artificial-intelligence.png"
+            src={ast}
             alt="About"
           />
           <div className="d-flex flex-column justify-content-center align-items-center gap-3 same">
@@ -158,7 +165,7 @@ function App() {
             <p className='mb-5 fs-4 text-secondary-emphasis'>I'd love to connect! Send me a message, and let's talk!</p>
            <div className='d-flex flex-row gap-4'>
 
-            <div className='d-flex justify-content-center align-items-center gap-3'>
+            <div className='d-flex justify-content-center align-items-center gap-3 contact-detail p-4'>
               <img className='gmail' src='https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-gmail-256.png' />
               <a className='mail' href="mailto:ys30371@gmail.com">Ys30371@gmail.com</a>
                 </div>
