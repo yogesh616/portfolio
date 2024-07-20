@@ -133,7 +133,7 @@ function App() {
                   alt="project1"
                 />
                 <p className="blue">Ripple</p>
-                <p className="gray">SocialMedia Platform.</p>
+                <a href='https://ripple-steel.vercel.app/' className="gray">SocialMedia Platform.</a>
               </div>
               <div className="pr">
                 <img
