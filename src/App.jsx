@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import ys from './Images/ys.jpg';
 import ast from './Images/3d.jpg'
+import logoPng from './Images/logo.png'
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
@@ -128,11 +129,11 @@ function App() {
               <div className="pr">
                 <img
                   className="mb-3 hover"
-                  src="https://cdn4.iconfinder.com/data/icons/wonderful-christmas-3d-1/128/4._Santa_1024.png"
+                  src={logoPng}
                   alt="project1"
                 />
-                <p className="blue">Web Development</p>
-                <p className="gray">With lots of unique blocks, you can easily build a page without coding.</p>
+                <p className="blue">Ripple</p>
+                <p className="gray">SocialMedia Platform.</p>
               </div>
               <div className="pr">
                 <img
