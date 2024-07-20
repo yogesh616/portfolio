@@ -132,7 +132,7 @@ function App() {
                   src={logoPng} style={{width: '110px', height: '110px'}}
                   alt="project1"
                 />
-                <a href='https://ripple-steel.vercel.app/' className="blue">Ripple</a>
+                <a style={{textDecoration: 'none'}} href='https://ripple-steel.vercel.app/' className="blue">Ripple</a>
                 <p  className="gray">SocialMedia Platform.</p>
               </div>
               <div className="pr">
