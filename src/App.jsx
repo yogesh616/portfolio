@@ -129,7 +129,7 @@ function App() {
               <div className="pr">
                 <img
                   className="mb-3 hover"
-                  src={logoPng}
+                  src={logoPng} style={{width: '50px'}}
                   alt="project1"
                 />
                 <p className="blue">Ripple</p>
