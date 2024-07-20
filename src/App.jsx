@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import ys from './Images/ys.jpg';
 import ast from './Images/3d.jpg'
+import logoPng from './Images/logo.png'
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
@@ -177,11 +178,11 @@ const handleThreads = () => {
               <div className="pr">
                 <img
                   className="mb-3 hover"
-                  src="https://cdn4.iconfinder.com/data/icons/wonderful-christmas-3d-1/128/4._Santa_1024.png"
+                  src={logoPng} style={{width: '110px', height: '110px'}}
                   alt="project1"
                 />
-                <p className="blue">Web Development</p>
-                <p className="gray">With lots of unique blocks, you can easily build a page without coding.</p>
+                <a style={{textDecoration: 'none', display: 'block'}} href='https://ripple-steel.vercel.app/' className="blue">Ripple</a>
+                <p  className="gray">SocialMedia Platform.</p>
               </div>
               <div className="pr">
                 <img
