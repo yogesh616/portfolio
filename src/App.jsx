@@ -1,10 +1,12 @@
 import { useRef } from 'react';
 import reactLogo from './assets/react.svg';
+import Lottie from 'react-lottie';
 import viteLogo from '/vite.svg';
 import './App.css';
 import ys from './Images/ys.jpg';
 import ast from './Images/3d.jpg'
 import logoPng from './Images/logo.png'
+import IntelliChatLogo from './Images/lottie.json'
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
@@ -13,6 +15,14 @@ function App() {
   const instaRef = useRef(null);
   const threadsRef = useRef(null);
   const icons = ['html', 'css', 'js', 'mongodb', 'nodejs', 'express', 'react'];
+  const defaultOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: IntelliChatLogo,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
 
   const handleHome = (e) => {
     e.preventDefault();
@@ -175,23 +185,21 @@ const handleThreads = () => {
             <h1 className='same test'>Projects</h1>
             <p className="mb-5">Each Project Uniquely Defines My Development Journey</p>
             <div className="projects d-flex gap-3">
+              {/* Ripple */}
               <div className="pr">
                 <img
                   className="mb-3 hover"
                   src={logoPng} style={{width: '110px', height: '110px'}}
                   alt="project1"
                 />
-                <a style={{textDecoration: 'none', display: 'block'}} href='https://ripple-steel.vercel.app/' className="blue">Ripple</a>
+                <a style={{textDecoration: 'none', display: 'block'}} href='https://ripple-steel.vercel.app/' target='_blank' className="blue">Ripple</a>
                 <p  className="gray">SocialMedia Platform.</p>
               </div>
+              {/* IntelliChat */}
               <div className="pr">
-                <img
-                  className="mb-3 hover"
-                  src="https://cdn4.iconfinder.com/data/icons/wonderful-christmas-3d-1/128/4._Santa_1024.png"
-                  alt="project2"
-                />
-                <p className="blue">Web Development</p>
-                <p className="gray">With lots of unique blocks, you can easily build a page without coding.</p>
+              <Lottie style={{margin: '0.5rem'}}  options={defaultOptions} width={110} height={110} />
+                <a style={{textDecoration: 'none', display: 'block'}} href='https://intelli-chat-two.vercel.app/' target='_blank' className="blue">IntelliChat</a>
+                <p  className="gray">Web Scrapper</p>
               </div>
               <div className="pr">
                 <img
