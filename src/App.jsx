@@ -204,11 +204,11 @@ const handleThreads = () => {
               <div className="pr">
                 <img
                   className="mb-3 hover"
-                  src="https://cdn4.iconfinder.com/data/icons/wonderful-christmas-3d-1/128/4._Santa_1024.png"
-                  alt="project3"
+                  src={logoPng} style={{width: '110px', height: '110px'}}
+                  alt="project1"
                 />
-                <p className="blue">Web Development</p>
-                <p className="gray">With lots of unique blocks, you can easily build a page without coding.</p>
+                <a style={{textDecoration: 'none', display: 'block'}} href='https://syncy.vercel.app/' target='_blank' className="blue">Syncy</a>
+                <p  className="gray">Music Streaming App.</p>
               </div>
             </div>
           </div>
