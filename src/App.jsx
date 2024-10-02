@@ -7,6 +7,7 @@ import ys from './Images/ys.jpg';
 import ast from './Images/3d.jpg'
 import logoPng from './Images/logo.png'
 import IntelliChatLogo from './Images/lottie.json'
+import syncyLogo from './Images/syncy.png'
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
@@ -204,7 +205,7 @@ const handleThreads = () => {
               <div className="pr">
                 <img
                   className="mb-3 hover"
-                  src={logoPng} style={{width: '110px', height: '110px'}}
+                  src={syncyLogo} style={{width: '110px', height: '110px'}}
                   alt="project1"
                 />
                 <a style={{textDecoration: 'none', display: 'block'}} href='https://syncy.vercel.app/' target='_blank' className="blue">Syncy</a>
