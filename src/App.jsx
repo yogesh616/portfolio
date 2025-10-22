@@ -271,11 +271,11 @@ function App() {
                 icon: '💬'
               },
               { 
-                name: 'IntelliChat', 
-                desc: 'Intelligent web scraping tool with advanced data extraction capabilities', 
-                link: 'https://intelli-chat-two.vercel.app/', 
+                name: 'Medisearch', 
+                desc: 'A medical assistant that provides quick answers and suggestions from a curated medical database', 
+                link: 'https://medi-search.vercel.app/', 
                 gradient: 'from-purple-500 via-pink-500 to-red-500',
-                icon: '🤖'
+                icon: '🏥'
               },
               { 
                 name: 'Syncy', 
